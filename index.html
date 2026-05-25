@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Logica Coffee</title>
+  <style>
+    :root {
+      --bg:      #0d0d0d;
+      --surface: #161616;
+      --orange:  #ff7020;
+      --white:   #f5f5f5;
+      --gray:    #888;
+      --border:  #2a2a2a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 0 16px 80px;
+    }
+
+    .wrap {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 56px 0 40px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 48px;
+    }
+
+    .app-label {
+      font-family: "SF Mono", "Fira Mono", monospace;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      color: var(--orange);
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 6vw, 52px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      color: var(--white);
+    }
+
+    .updated {
+      margin-top: 16px;
+      font-size: 13px;
+      color: var(--gray);
+      font-family: "SF Mono", "Fira Mono", monospace;
+      letter-spacing: 0.05em;
+    }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--orange);
+      font-family: "SF Mono", "Fira Mono", monospace;
+      margin-bottom: 16px;
+    }
+
+    p { color: #ccc; margin-bottom: 14px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      color: #ccc;
+      padding: 10px 0 10px 20px;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+
+    ul li:first-child { border-top: 1px solid var(--border); }
+
+    ul li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--orange);
+      font-weight: 700;
+    }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--orange);
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 32px;
+    }
+
+    .highlight-box p {
+      color: var(--white);
+      font-size: 15px;
+      margin: 0;
+    }
+
+    a {
+      color: var(--orange);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 32px;
+      font-size: 13px;
+      color: var(--gray);
+      font-family: "SF Mono", "Fira Mono", monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <p class="app-label">Logica Coffee</p>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: May 25, 2026</p>
+    </header>
+
+    <section>
+      <div class="highlight-box">
+        <p>Logica Coffee does not collect, transmit, or share any personal data. Everything you enter stays on your device.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Overview</h2>
+      <p>
+        Logica Coffee is a personal coffee brewing companion. Your brew journal, bean inventory, recipes, and settings are stored
+        locally on your iPhone and optionally synced to your paired Apple Watch — both of which are your own devices.
+        No data is sent to any server. No account is required.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data stored on your device</h2>
+      <p>The following information is saved locally using Apple's standard on-device storage:</p>
+      <ul>
+        <li>Brew journal entries (method, dose, ratio, tasting notes, star rating)</li>
+        <li>Coffee bean inventory (name, origin, roast level, flavour notes, remaining weight)</li>
+        <li>Custom recipes and brew timelines you create</li>
+        <li>App preferences and settings (grinder, temperature, filter type)</li>
+      </ul>
+      <p>
+        This data never leaves your device and is not accessible to us or any third party.
+        You can delete it at any time from within the app or by uninstalling the app.
+      </p>
+    </section>
+
+    <section>
+      <h2>Apple Watch sync</h2>
+      <p>
+        If you use the Logica Coffee Apple Watch app, brew session data is shared between your iPhone and Apple Watch
+        using Apple's WatchConnectivity framework. This communication happens directly between your two devices
+        over your local network or Bluetooth — it does not pass through any external server.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data we do not collect</h2>
+      <ul>
+        <li>We do not collect your name, email address, or any account information</li>
+        <li>We do not track your location</li>
+        <li>We do not collect analytics, crash reports, or usage statistics</li>
+        <li>We do not use advertising SDKs or track you across apps</li>
+        <li>We do not share any data with third parties</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Third-party services</h2>
+      <p>
+        Logica Coffee does not integrate any third-party analytics, advertising, or crash reporting services.
+        The only external frameworks used are Apple's own system frameworks (WatchConnectivity, WidgetKit, ActivityKit),
+        which operate under <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Children's privacy</h2>
+      <p>
+        Logica Coffee does not knowingly collect any data from users of any age.
+        The app is suitable for all ages.
+      </p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>
+        If this policy changes in a meaningful way (for example, if a future version of the app introduces
+        network features), the updated date at the top of this page will reflect that, and the new policy
+        will be available before the update reaches the App Store.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Questions about this privacy policy? Reach out at
+        <a href="mailto:khatskevich.mv@gmail.com">khatskevich.mv@gmail.com</a>.
+      </p>
+    </section>
+
+    <footer>
+      <p>Logica Coffee &mdash; Mikita Khatskevich &mdash; 2026</p>
+    </footer>
+
+  </div>
+</body>
+</html>
