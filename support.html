@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — Logica Coffee</title>
+  <style>
+    :root {
+      --bg:      #0d0d0d;
+      --surface: #161616;
+      --orange:  #ff7020;
+      --white:   #f5f5f5;
+      --gray:    #888;
+      --border:  #2a2a2a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 0 16px 80px;
+    }
+
+    .wrap {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 56px 0 40px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 48px;
+    }
+
+    .app-label {
+      font-family: "SF Mono", "Fira Mono", monospace;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      color: var(--orange);
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 6vw, 52px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      color: var(--white);
+    }
+
+    .updated {
+      margin-top: 16px;
+      font-size: 13px;
+      color: var(--gray);
+      font-family: "SF Mono", "Fira Mono", monospace;
+      letter-spacing: 0.05em;
+    }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--orange);
+      font-family: "SF Mono", "Fira Mono", monospace;
+      margin-bottom: 16px;
+    }
+
+    p { color: #ccc; margin-bottom: 14px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      color: #ccc;
+      padding: 10px 0 10px 20px;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+
+    ul li:first-child { border-top: 1px solid var(--border); }
+
+    ul li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--orange);
+      font-weight: 700;
+    }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--orange);
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 32px;
+    }
+
+    .highlight-box p {
+      color: var(--white);
+      font-size: 15px;
+      margin: 0;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+
+    .faq-item:first-of-type {
+      border-top: 1px solid var(--border);
+    }
+
+    .faq-q {
+      color: var(--white);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .faq-a {
+      color: #ccc;
+      margin: 0;
+    }
+
+    a {
+      color: var(--orange);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .contact-card .label {
+      font-family: "SF Mono", "Fira Mono", monospace;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gray);
+    }
+
+    .contact-card .email {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--orange);
+    }
+
+    .contact-card .note {
+      font-size: 13px;
+      color: var(--gray);
+      margin-top: 4px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 32px;
+      font-size: 13px;
+      color: var(--gray);
+      font-family: "SF Mono", "Fira Mono", monospace;
+    }
+
+    footer a {
+      color: var(--gray);
+    }
+
+    footer a:hover {
+      color: var(--orange);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <p class="app-label">Logica Coffee</p>
+      <h1>Support</h1>
+      <p class="updated">We typically respond within 24 hours</p>
+    </header>
+
+    <section>
+      <div class="highlight-box">
+        <p>Have a question, found a bug, or want to suggest something? Drop an email — every message is read personally.</p>
+      </div>
+
+      <div class="contact-card">
+        <span class="label">Email</span>
+        <a class="email" href="mailto:khatskevich.mv@gmail.com">khatskevich.mv@gmail.com</a>
+        <span class="note">Include your iPhone model and iOS version if reporting a bug.</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <p class="faq-q">Is Logica Coffee free?</p>
+        <p class="faq-a">Yes, completely. No subscription, no paywall, no ads. Every feature is fully unlocked from the moment you install. Optional tips are available inside if you'd like to support development — entirely your choice.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Where is my data stored?</p>
+        <p class="faq-a">All your brew journal entries, bean inventory, and custom recipes are stored on your device. If you have iCloud enabled, they sync automatically across your devices via your personal iCloud account. Nothing is sent to any external server.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">How do I back up or transfer my data to a new iPhone?</p>
+        <p class="faq-a">If iCloud sync is enabled, your data transfers automatically when you sign in on a new device. Alternatively, restoring from an iCloud or iTunes backup will include all Logica Coffee data.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">The Apple Watch app isn't syncing with my iPhone. What do I do?</p>
+        <p class="faq-a">Make sure both devices are on the same Apple ID and that Bluetooth is enabled. Open the app on your iPhone first, then launch it on your Watch. If the problem persists, force-quitting and reopening both apps usually resolves it.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">How do I create a custom recipe?</p>
+        <p class="faq-a">In the Brew Builder, select a method, then tap the recipe selector and choose "Create Recipe". You can add as many stages as you like, setting pour amount, timing, and water type for each one.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">What brew methods does the app support?</p>
+        <p class="faq-a">Hario V60, AeroPress, Chemex, French Press, Hario Switch, Clever Dripper, Moka Pot, Syphon, Cold Brew, Turkish Coffee, Vietnamese Phin, Ceado Hoop, Espresso, Ristretto, Lungo, Americano, Cappuccino, Flat White, Latte, Cortado, and Macchiato.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">How do I delete all my data?</p>
+        <p class="faq-a">You can delete individual journal entries and beans from within the app. To remove all data, uninstall the app. If iCloud sync is enabled, you can also remove Logica Coffee data from <strong style="color: var(--white);">Settings → [Your Name] → iCloud → Manage Account Storage</strong>.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">I found a bug. How do I report it?</p>
+        <p class="faq-a">Email us at <a href="mailto:khatskevich.mv@gmail.com">khatskevich.mv@gmail.com</a> with a description of what happened, your iPhone model, and your iOS version. Screenshots are always helpful.</p>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>Privacy</h2>
+      <p>
+        Logica Coffee does not collect, transmit, or share any personal data.
+        Read the full <a href="./index.html">Privacy Policy</a>.
+      </p>
+    </section>
+
+    <footer>
+      <p>Logica Coffee &mdash; Mikita Khatskevich &mdash; 2026 &mdash; <a href="./index.html">Privacy Policy</a></p>
+    </footer>
+
+  </div>
+</body>
+</html>
