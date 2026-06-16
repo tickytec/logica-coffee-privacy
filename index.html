@@ -6,12 +6,12 @@
   <title>Privacy Policy — Logica Coffee</title>
   <style>
     :root {
-      --bg:      #0d0d0d;
-      --surface: #161616;
-      --orange:  #ff7020;
-      --white:   #f5f5f5;
-      --gray:    #888;
-      --border:  #2a2a2a;
+      --bg:      #100f0d;
+      --surface: #1a1613;
+      --orange:  #de9249;
+      --white:   #f4f1ea;
+      --gray:    #8a8076;
+      --border:  #2c2722;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -46,10 +46,11 @@
     }
 
     h1 {
-      font-size: clamp(32px, 6vw, 52px);
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      line-height: 1.1;
+      font-family: "New York", "Iowan Old Style", Georgia, "Times New Roman", serif;
+      font-size: clamp(34px, 6.5vw, 56px);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.08;
       color: var(--white);
     }
 
@@ -137,7 +138,7 @@
     <header>
       <p class="app-label">Logica Coffee</p>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: June 7, 2026 — recipe sharing added</p>
+      <p class="updated">Last updated: June 16, 2026 — Apple Health caffeine logging added</p>
     </header>
 
     <section>
@@ -225,6 +226,24 @@
     </section>
 
     <section>
+      <h2>Apple Health</h2>
+      <p>
+        Logica Coffee can write an estimated caffeine amount for each brew you save to Apple Health, so your
+        caffeine intake appears alongside the rest of your health data. This is entirely optional and off until
+        you turn it on and grant permission in <strong>Settings → Apple Health</strong> inside the app.
+      </p>
+      <p>
+        The app only ever <em>writes</em> caffeine entries — it never reads any of your health data. Apple
+        requires the read permission prompt to enable caffeine logging at all, but Logica Coffee requests no
+        read access and queries nothing from Health. All caffeine values are calculated on your device from the
+        brew you logged, and the data is stored by Apple in Health under
+        <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a> — it is never
+        sent to us. You can revoke access at any time in <strong>Settings → Health → Data Access &amp; Devices →
+        Logica Coffee</strong>.
+      </p>
+    </section>
+
+    <section>
       <h2>Recipe sharing</h2>
       <p>
         Logica Coffee lets you share a custom recipe with someone else as a link or a QR code.
@@ -248,6 +267,7 @@
       <ul>
         <li>We do not collect your name, email address, or any account information</li>
         <li>We do not track your location</li>
+        <li>We do not read your Apple Health data — caffeine logging is write-only</li>
         <li>We do not collect analytics, crash reports, or usage statistics</li>
         <li>We do not use advertising SDKs or track you across apps</li>
         <li>We do not share any data with third parties</li>
@@ -259,7 +279,7 @@
       <p>
         Logica Coffee does not integrate any third-party analytics, advertising, or crash reporting services.
         The only external frameworks used are Apple's own system frameworks (WatchConnectivity, WidgetKit, ActivityKit,
-        iCloud Documents, the Vision on-device text recognition framework, the system photo picker, and local
+        iCloud Documents, HealthKit, the Vision on-device text recognition framework, the system photo picker, and local
         notifications), all of which operate under
         <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.
       </p>
